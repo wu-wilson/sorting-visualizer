@@ -12,4 +12,4 @@ Currently, this visualizer contains animations for:
 ### **Running the Web App**
 
 This web app is currently deployed using github pages. Check it out below!
-[![Sorting Visualizer Github IMG](https://user-images.githubusercontent.com/85847744/124341100-23f18c80-db88-11eb-9246-a0dcfd691971.png)](https://wu-wilson.github.io/sorting-visualizer/)
+[![Sorting Visualizer Github IMG](https://user-images.githubusercontent.com/85847744/124341203-c27ded80-db88-11eb-8320-07cf60807de5.png)](https://wu-wilson.github.io/sorting-visualizer/)
