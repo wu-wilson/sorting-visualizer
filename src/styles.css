@@ -224,7 +224,7 @@ body {
 .bars-bars-container {
   display: flex;
   width: 100%;
-  height: 580px;
+  height: 480px;
   justify-content: center;
   align-items: flex-end;
   border-bottom: 2px solid black;

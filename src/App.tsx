@@ -14,14 +14,14 @@ export const generateNewArray = (arrSelection: string) => {
   if (arrSelection !== "ARRAY SIZE") {
     for (let i = 0; i < parseInt(arrSelection); i++) {
       newArr.push({
-        height: Math.floor(Math.random() * (500 - 10)) + 10,
+        height: Math.floor(Math.random() * (430 - 10)) + 10,
         color: "#d1d1d1",
       });
     }
   } else {
     for (let i = 0; i < 40; i++) {
       newArr.push({
-        height: Math.floor(Math.random() * (500 - 10)) + 10,
+        height: Math.floor(Math.random() * (430 - 10)) + 10,
         color: "#d1d1d1",
       });
     }
