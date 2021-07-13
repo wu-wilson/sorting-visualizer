@@ -66,9 +66,24 @@ const Navbar = ({
     setHbOpen(!hbOpen);
   };
 
+  // Return the proper hamburger menu icon.
+  const getHbIcon = () => {
+    if (hbOpen) {
+      return <div className="hb-x-container">✕</div>;
+    } else {
+      return (
+        <div className="hb-line-container">
+          <div className="hb-line" />
+          <div className="hb-line" />
+          <div className="hb-line" />
+        </div>
+      );
+    }
+  };
+
   return (
     <div className="nb-container">
-      <div className="nb-bar">sorting visualizer</div>
+      sorting visualizer
       <div className="nb-menus-container">
         <DDMenu
           open={algoOpen}
@@ -101,18 +116,14 @@ const Navbar = ({
           setArr={setArr}
         />
       </div>
-      <div className="hb-container">
-        <div className="hb-select-container" onClick={handleHbClick}>
-          <div
-            className={`hb-line-container ${hbOpen ? "hb-line-closed" : null}`}
-          >
-            <div className="hb-line" />
-            <div className="hb-line" />
-            <div className="hb-line" />
-          </div>
-          <div className={`hb-x ${hbOpen ? "hb-x-open" : null}`}>✕</div>
-        </div>
-        <div className={`hb-menu ${hbOpen ? "hb-menu-open" : null}`}>
+      <div className="hb-container" onClick={handleHbClick}>
+        {getHbIcon()}
+      </div>
+      <div
+        className="hb-menu-container"
+        style={{ transform: hbOpen ? "translateX(210px)" : "translateX(0)" }}
+      >
+        <div className="hb-menu">
           <DDMenu
             open={algoOpen}
             setOpen={setAlgoOpen}
