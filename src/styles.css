@@ -6,17 +6,23 @@
   top: 0;
   left: 0;
   width: 100vw;
-  height: 100vh;
+  height: auto;
   position: absolute;
-  background-color: rgb(238, 238, 238);
   align-items: center;
-  overflow-y: scroll;
-  overflow-x: hidden;
+}
+
+/*------------------------------SCROLLBAR------------------------------*/
+html {
+  overflow: overlay;
+}
+
+body {
+  background-color: rgb(238, 238, 238);
 }
 
 /*------------------------------NAVBAR------------------------------*/
 .nb-container {
-  position: fixed;
+  position: relative;
   top: 0;
   left: 0;
   display: flex;
@@ -165,12 +171,13 @@
 /*------------------------------BARS------------------------------*/
 
 .bars-container {
-  margin-top: 70px;
+  position: relative;
   display: flex;
   width: 100vw;
   height: calc(100vh - 70px);
   justify-content: center;
   align-items: center;
+  z-index: 0;
 }
 
 .bars-box-container {
